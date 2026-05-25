@@ -3,10 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Berita Viral Hari Ini</title>
+    <title>Edukasi Anak</title>
     
     <!-- 1. METRICS ENGINE: MASUKKAN SCRIPT GOOGLE TAG MANAGER (GTM) DI SINI -->
     <!-- [GTM SCRIPT PLACEHOLDER] -->
+	<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-NF2DNL8R');</script>
+<!-- End Google Tag Manager -->
     
     <style>
         /* Base Reset & Speed Optimization (Sub-second loading) */
@@ -105,11 +112,23 @@
             margin-bottom: 24px;
         }
         
-        /* Frictionless Pulsing CTA Button */
+        /* CTA Wrapper & Urgency Notice */
         .cta-wrapper {
             text-align: center;
             margin-top: 32px;
         }
+        .urgency-notice {
+            font-size: 0.8rem;
+            color: #dc2626;
+            margin-top: 12px;
+            font-weight: bold;
+        }
+
+        /* =========================================
+           KUMPULAN CTA BUTTON (PILIH SALAH SATU)
+        ========================================= */
+
+        /* 1. ORIGINAL ORANGE */
         .cta-button {
             display: block;
             width: 100%;
@@ -124,87 +143,178 @@
             transition: transform 0.1s ease;
             animation: pulse-animation 2s infinite;
         }
-        .cta-button:active {
+
+        /* 2. OCEAN BLUE */
+        .cta-button-blue {
+            display: block;
+            width: 100%;
+            background: linear-gradient(135deg, #0072ff 0%, #00c6ff 100%);
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: 800;
+            font-size: 1.2rem;
+            padding: 16px 20px;
+            border-radius: 50px;
+            box-shadow: 0 4px 15px rgba(0, 114, 255, 0.3);
+            transition: transform 0.1s ease;
+            animation: pulse-animation-blue 2s infinite;
+        }
+
+        /* 3. EMERALD GREEN */
+        .cta-button-green {
+            display: block;
+            width: 100%;
+            background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: 800;
+            font-size: 1.2rem;
+            padding: 16px 20px;
+            border-radius: 50px;
+            box-shadow: 0 4px 15px rgba(17, 153, 142, 0.3);
+            transition: transform 0.1s ease;
+            animation: pulse-animation-green 2s infinite;
+        }
+
+        /* 4. ROYAL PURPLE */
+        .cta-button-purple {
+            display: block;
+            width: 100%;
+            background: linear-gradient(135deg, #8E2DE2 0%, #4A00E0 100%);
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: 800;
+            font-size: 1.2rem;
+            padding: 16px 20px;
+            border-radius: 50px;
+            box-shadow: 0 4px 15px rgba(142, 45, 226, 0.3);
+            transition: transform 0.1s ease;
+            animation: pulse-animation-purple 2s infinite;
+        }
+
+        /* Klik/Sentuh Efek untuk Semua Tombol */
+        .cta-button:active,
+        .cta-button-blue:active,
+        .cta-button-green:active,
+        .cta-button-purple:active {
             transform: scale(0.98);
         }
-        .urgency-notice {
-            font-size: 0.8rem;
-            color: #dc2626;
-            margin-top: 12px;
-            font-weight: bold;
-        }
+
+        /* =========================================
+           KEYFRAMES ANIMASI PULSE UNTUK SETIAP WARNA
+        ========================================= */
         
         @keyframes pulse-animation {
             0% { box-shadow: 0 0 0 0 rgba(255, 69, 0, 0.5); }
             70% { box-shadow: 0 0 0 12px rgba(255, 69, 0, 0); }
             100% { box-shadow: 0 0 0 0 rgba(255, 69, 0, 0); }
         }
-    </style>
+
+        @keyframes pulse-animation-blue {
+            0% { box-shadow: 0 0 0 0 rgba(0, 114, 255, 0.5); }
+            70% { box-shadow: 0 0 0 12px rgba(0, 114, 255, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(0, 114, 255, 0); }
+        }
+
+        @keyframes pulse-animation-green {
+            0% { box-shadow: 0 0 0 0 rgba(17, 153, 142, 0.5); }
+            70% { box-shadow: 0 0 0 12px rgba(17, 153, 142, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(17, 153, 142, 0); }
+        }
+
+        @keyframes pulse-animation-purple {
+            0% { box-shadow: 0 0 0 0 rgba(142, 45, 226, 0.5); }
+            70% { box-shadow: 0 0 0 12px rgba(142, 45, 226, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(142, 45, 226, 0); }
+        }
+</style>
 </head>
 <body>
     <!-- 2. METRICS ENGINE: MASUKKAN NOSCRIPT GOOGLE TAG MANAGER TEPAT DI BAWAH BODY -->
     <!-- [GTM NOSCRIPT PLACEHOLDER] -->
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NF2DNL8R"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
 
     <div class="bridge-container">
         <!-- Meta Data Simulasi Berita Organik -->
         <div class="meta-header">
-            <span class="badge-exclusive">Breaking News</span> • Diperbarui beberapa detik yang lalu
+            <span class="badge-exclusive">Edukasi Anak</span> • Diperbarui beberapa detik yang lalu
         </div>
-
+        <div style="margin: 24px 0; text-align: center;">
+            <img src="https://down-id.img.susercontent.com/file/id-11134207-81zti-meo1xhndumteea.webp" alt="Wujud Asli Penemuan" style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+            <p style="font-size: 0.75rem; color: #64748b; margin-top: 8px; font-style: italic;">
+                *Mainan Edukasi Anak Masak Masakan Asli.
+            </p>
+        </div>
         <!-- BLOK 1: THE PAYOFF (Pemuasan Hasrat Klik dari Iklan Fb) -->
         <p class="payoff-block">
             <!-- [n8n INTEGRATION VARIABLE: {{PAYOFF_TEXT}}] -->
-            Kejadian heboh pelabrakan ibu RT yang dituduh tetangga pasang susuk pemanjang paha akhirnya terbongkar. Warga satu komplek mendadak tertunduk malu saat isi lemari kamar pribadinya dibuka paksa petugas.
-        </p>
+            Tiap kali HP atau tablet diambil, anak langsung tantrum berjam-jam? Memaksa anak lepas dari layar gadget dengan cara dimarahi memang sangat menguras emosi. Faktanya, anak kecanduan layar karena mereka bosan dan kurang stimulasi aktivitas fisik yang membuat mereka merasa "hebat" dan "dipercaya" layaknya orang dewasa.
+			</p>
 
         <!-- BLOK 2: THE LOGICAL PIVOT (Menggeser Fokus dari Identitas Drama ke Kompetensi Logis) -->
         <p class="pivot-block">
             <!-- [n8n INTEGRATION VARIABLE: {{PIVOT_TEXT}}] -->
-            Sama sekali tidak ditemukan minyak jimat atau benda klenik di sana. Bentuk paha ramping dan ilusi kaki jenjang semampai yang bikin iri para ibu tersebut murni hasil rekayasa siluet kain dari sebuah celana kain berpotongan vertikal khusus.
-        </p>
-
+            Berhenti membelikan mainan plastik biasa yang hanya dimainkan 5 menit lalu diabaikan. Solusi paling ampuh untuk mereset kecanduan gadget mereka adalah dengan memberikan tantangan dunia nyata. Mainan Edukasi Masak Masakan Mini Kitchen 45 Pcs ini bukan mainan pura-pura! Ini adalah set alat masak elektronik sungguhan berdaya rendah yang dirancang khusus, aman, dan ergonomis untuk tangan mungil anak Anda (usia 6 tahun ke atas).
+		</p>
+        <div style="margin: 24px 0; text-align: center;">
+            <img src="https://down-id.img.susercontent.com/file/id-11134207-7rbk6-m9vhbt9qmxpv52.webp" alt="Wujud Asli Penemuan" style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+            <p style="font-size: 0.75rem; color: #64748b; margin-top: 8px; font-style: italic;">
+                *Mainan Edukasi Anak Masak Masakan Asli.
+            </p>
+        </div>
         <!-- BLOK 3: THE CHEAT CODE (Manfaat Produk yang Dibungkus Fakta Lapangan) -->
         <div class="cheat-code-box">
-            <div class="cheat-title">Hasil Investigasi Material Pakaian:</div>
+            <div class="cheat-title">Mengapa set dapur mini ini dijamin bisa membuat anak lupa dengan YouTube dan TikTok seharian?</div>
             <ul class="cheat-list">
                 <!-- [n8n INTEGRATION VARIABLE: {{CHEAT_CODE_1}}] -->
-                <li><strong>Korset Invisible:</strong> Menahan gelambir perut rata dalam 3 detik tanpa sesak napas.</li>
+                <li><strong>Pengalaman Memasak Sungguhan (Tanpa Api):</strong> Menggunakan kompor listrik mini dengan 6 fungsi nyata (menggoreng, mengukus, hot pot, merebus bubur, semur, dan dessert). Sensasi memasak makanan asli memicu hormon kebahagiaan (dopamin) alami yang jauh lebih kuat dari game di HP!</li>
                 <!-- [n8n INTEGRATION VARIABLE: {{CHEAT_CODE_2}}] -->
-                <li><strong>Vertikal Stripe Ratio:</strong> Potongan pinggang tinggi (highwaist) membuat efek kaki 10cm lebih jenjang.</li>
+                <li><strong>Desain Material Aman & Ergonomis:</strong> Dilengkapi wajan berlapisan anti-lengket (water-based) dan panci stainless steel food grade. Tepi panci dibuat halus tanpa sudut tajam, lengkap dengan gagang anti-melepuh yang pas untuk anak-anak.</li>
                 <!-- [n8n INTEGRATION VARIABLE: {{CHEAT_CODE_3}}] -->
-                <li><strong>Anti-Buncit Fabric:</strong> Material fleksibel yang aman menyembunyikan penumpukan lemak paha walau setelah makan besar.</li>
+                <li><strong>Momen Bonding Bebas Layar:</strong> Mainan ini wajib digunakan di bawah pengawasan orang tua. Ini adalah "alat pemaksa" yang indah untuk menciptakan waktu berkualitas (quality time) antara Anda dan si kecil, mengajarkan mereka life skill dasar, sambil menjauhkan mata mereka dari radiasi layar HP.</li>
             </ul>
         </div>
 
         <!-- BLOK 4: CONDITIONAL FRAMING (Jebakan Logika Jika-Maka untuk Memaksa Tindakan) -->
         <p class="framing-block">
             <!-- [n8n INTEGRATION VARIABLE: {{FRAMING_TEXT}}] -->
-            Jika Anda sudah lelah membuang uang jutaan rupiah untuk perawatan tubuh namun paha tetap terlihat lebar saat berpakaian, maka beralih ke teknologi rekayasa siluet ini adalah satu-satunya pilihan rasional Anda.
-        </p>
-
+            Jika Anda sudah lelah berdebat dan menguras emosi setiap hari hanya demi menjauhkan anak dari layar smartphone, maka menukar waktu screen-time mereka dengan keterampilan hidup nyata, melatih motorik halus, dan membangun kedekatan emosional di dapur adalah investasi pengasuhan paling rasional yang bisa Anda putuskan hari ini.
+			</p>
+                <div style="margin: 24px 0; text-align: center;">
+            <img src="https://down-id.img.susercontent.com/file/id-11134207-7rbkd-m9vhbt9gap8045.webp" alt="Wujud Asli Penemuan" style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+            <p style="font-size: 0.75rem; color: #64748b; margin-top: 8px; font-style: italic;">
+                *Mainan Edukasi Anak Masak Masakan Asli.
+            </p>
+        </div>
         <!-- BLOK 5: URGENCY & FRICTIONLESS CTA (Mengunci Klik & Drop Cookie Afiliasi) -->
+		
+		<p class="framing-block">
+            <!-- [n8n INTEGRATION VARIABLE: {{FRAMING_TEXT}}] -->
+            Dikemas dalam kotak hadiah kartun yang eksklusif, set memasak ini adalah kejutan ulang tahun atau hadiah pencapaian terbaik yang pernah mereka terima. Stok varian terlengkap (45 Pcs) sering kali habis terjual karena tingginya permintaan dari komunitas parenting.</p>
+                
         <div class="cta-wrapper">
             <!-- [n8n INTEGRATION VARIABLE: {{SHOPEE_AFFILIATE_LINK}}] -->
-            <a href="https://shope.ee/your_affiliate_link_here" class="cta-button" id="cta-outbound">
-                👉 CEK SISA STOK & DISKON DI SHOPEE SEKARANG
+            <a href="https://s.shopee.co.id/2LVPzJgGNm" class="cta-button" id="cta-outbound">
+                👉 Tingkatkan Fokus Anak Sekarang 
             </a>
-            <p class="urgency-notice">⚠️ Subsidi diskon potongan langsung dari toko resmi otomatis hangus jika sesi membaca ini ditutup.</p>
         </div>
 		
 		<div class="cta-wrapper">
             <!-- [n8n INTEGRATION VARIABLE: {{SHOPEE_AFFILIATE_LINK}}] -->
-            <a href="https://shope.ee/your_affiliate_link_here" class="cta-button" id="cta-outbound">
-                👉 CEK SEKARANG
+            <a href="https://s.shopee.co.id/6L1YkgULNn" class="cta-button-purple" id="cta-outbound">
+                👉 Cara Pakai Mainan
             </a>
-            <p class="urgency-notice">⚠️ Subsidi diskon potongan langsung dari toko resmi otomatis hangus jika sesi membaca ini ditutup.</p>
         </div>
 		
 		<div class="cta-wrapper">
             <!-- [n8n INTEGRATION VARIABLE: {{SHOPEE_AFFILIATE_LINK}}] -->
-            <a href="https://shope.ee/your_affiliate_link_here" class="cta-button" id="cta-outbound">
-                👉 CEK DISKON SEKARANG
+            <a href="https://s.shopee.co.id/1VwIzoeVFb" class="cta-button-green" id="cta-outbound">
+                👉 Cegah Anak Main HP
             </a>
-            <p class="urgency-notice">⚠️ Subsidi diskon potongan langsung dari toko resmi otomatis hangus jika sesi membaca ini ditutup.</p>
+            <p class="urgency-notice">(⚠️ Berikan aktivitas nyata hari ini, sebelum kecanduan layar mereka semakin sulit dihentikan.)</p>
         </div>
     </div>
 </body>
